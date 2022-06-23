@@ -11,6 +11,7 @@ function Item(props) {
 
     const handleShowCategory = (e,category) => {
         e.preventDefault()
+        e.stopPropagation();
         dispatch(setCurrentCategory(category))
     }
 
