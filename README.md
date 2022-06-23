@@ -7,7 +7,7 @@ Receives data:<br>
 
 
 ## Demo
-
+https://category-items.vercel.app/
 
 ## Technologies used
 React, Redux (toolkit/thunk), Material UI
