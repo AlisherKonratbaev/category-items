@@ -1,0 +1,129 @@
+
+.portfolio{
+    padding: 80px 0;
+    background-color: #FDF0E9;
+}
+.portfolio__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    margin-bottom: 75px;
+}
+
+.tabs__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tabs__item +.tabs__item{
+    margin-left: 65px;
+}
+.tabs__link::first-letter{
+    text-transform: uppercase;
+}
+.tabs__link {
+    color:#391400;
+    transition: all 0.3s;
+}
+
+.tabs__link:hover {
+    color:#16CD53;
+}
+
+.tabs__link.active {
+    color:#16CD53;
+}
+
+.item-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.item{
+    width: 370px;
+    height: 420px;
+    overflow: hidden;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-bottom: 32px;
+
+}
+.item.active {
+    border: 7px solid #4FE24A;
+}
+.item__inner{
+    position: absolute;
+    bottom: 14%;
+    left: 13%;
+    z-index: 99;
+}
+
+.item__link{
+    background-color: rgb(255, 255, 255);
+    border-radius: 19px;
+    padding: 10px 20px;
+}
+.item__title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-top: 24px;
+}
+.mask {
+    background-color: #9B9B9B;
+    opacity: 10%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.overlay{
+    background-color: #5C2000;
+    opacity: 32%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.btn_wrap{
+    text-align: center;
+}
+
+.portfolio__btn {
+    padding: 15px 45px;
+    color: #391400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 3px 9px rgba(57, 20, 0, 0.08);
+    margin: 0 auto;
+    margin-bottom: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs__select {
+    display: none;
+    appearance: none;
+    overflow: hidden;
+    background: url('../../assets/img/Triangle.svg') no-repeat right;
+    padding: 15px 16px;
+    border: 1px solid #F3D1BF;
+    width: 100%;
+    border-radius: 5px;
+    background-position-x: calc(100% - 16px);
+}
