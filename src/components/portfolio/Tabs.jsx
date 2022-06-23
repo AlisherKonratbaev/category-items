@@ -46,7 +46,13 @@ function Tabs(props) {
             <select className="tabs__select" onChange={(e) => handleSelectCategory(e)}>
                 <option value="all">Show all</option>
                 {categories && categories.map(category => (
-                    <option value={category} key={category}>{category}</option>
+                   <option
+                        selected={category == currentCat ? true : false}
+                        value={category}
+                        key={category}
+                    >
+                        {category}
+                    </option>
                 ))}
             </select>
         </div>
